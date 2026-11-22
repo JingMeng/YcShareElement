@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="us.pinguo.shareelementdemo">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -12,21 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity" />
-        <activity android:name=".simple.SimpleFragmentActivity" />
-        <activity android:name=".simple.SimpleFromActivity" />
-        <activity android:name=".simple.SimpleToActivity" />
-        <activity android:name=".advanced.AdvancedListActivity" />
-        <activity android:name=".advanced.AdvancedContentActivity" />
-        <activity android:name=".contacts.ContactsActivity"/>
-        <activity android:name=".contacts.DetailActivity" />
+        <activity android:name=".SecondActivity" / android:exported="true">
+        <activity android:name=".simple.SimpleFragmentActivity" / android:exported="true">
+        <activity android:name=".simple.SimpleFromActivity" / android:exported="true">
+        <activity android:name=".simple.SimpleToActivity" / android:exported="true">
+        <activity android:name=".advanced.AdvancedListActivity" / android:exported="true">
+        <activity android:name=".advanced.AdvancedContentActivity" / android:exported="true">
+        <activity android:name=".contacts.ContactsActivity"/ android:exported="true">
+        <activity android:name=".contacts.DetailActivity" / android:exported="true">
     </application>
 
 </manifest>
